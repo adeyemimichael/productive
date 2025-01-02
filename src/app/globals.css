@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .btn {
+        @apply bg-black text-white font-medium  px-4 py-2 items-center justify-center rounded-lg tracking-tight;
+    }
+    .btn-primary {
+        @apply bg-black text-white;
+
+    }
+    .btn-text{
+        @apply text-black bg-transparent;
+    }
+
+    .custom-radial {
+        @apply bg-transparent; 
+        background: radial-gradient(ellipse 200% 100% at bottom left, #183ec2, #eaeefe 100%);
+      }
+    .logo-ticker-image{
+        @apply h-8 w-auto;
+    }
+  .tag {
+    @apply rounded-lg text-sm border border-[#222]/10 px-3 py-1 tracking-tight w-fit
+
+  }
+  .section-title{
+    @apply text-center text-3xl font-bold tracking-tighter bg-gradient-to-b from-black to-[#001e80] md:text-[54px] md:leading-[60px] text-transparent bg-clip-text;
+  }
+  .section-description
+  {
+    @apply 
+    text-center text-[22px] leading-[30px] tracking-tight text-[010d3e] 
+  }
+  .section-heading{
+    @apply max-w-[540px] mx-auto;
+  }
+  .card{
+    @apply max-w-xs w-full  p-10 rounded-3xl shadow-[0_7px_14px_#eaeaea] border-solid border-[#222222]/10
+  }
+ .background-section{
+  @apply overflow-x-clip bg-gradient-to-b from-[#fffff] to-[#02dcff] py-24;
+ }
+}
+@layer components {
+  .bg-rainbow {
+    background: linear-gradient(to right, #dd7ddf, #e1cd86, #bbcb92, #71c2ef, #3bffff, #dd7ddf);
+  }
+}
+@layer components {
+  .mask-gradient {
+    mask-image: linear-gradient(to bottom, transparent, black/25%, transparent, black/75%, transparent);
+    -webkit-mask-image: linear-gradient(to bottom, transparent, black/25%, transparent, black/75%, transparent); /* for webkit browsers */
+  }
+  
+}

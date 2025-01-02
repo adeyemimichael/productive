@@ -39,9 +39,7 @@
   .card{
     @apply max-w-xs w-full  p-10 rounded-3xl shadow-[0_7px_14px_#eaeaea] border-solid border-[#222222]/10
   }
- .background-section{
-  @apply overflow-x-clip bg-gradient-to-b from-[#fffff] to-[#02dcff] py-24;
- }
+ 
 }
 @layer components {
   .bg-rainbow {
@@ -53,5 +51,4 @@
     mask-image: linear-gradient(to bottom, transparent, black/25%, transparent, black/75%, transparent);
     -webkit-mask-image: linear-gradient(to bottom, transparent, black/25%, transparent, black/75%, transparent); /* for webkit browsers */
   }
-  
 }

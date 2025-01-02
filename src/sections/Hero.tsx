@@ -6,10 +6,10 @@ import Cylindercog from "@/assets/cylinder.png";
 import noodleImage from "@/assets/noodle.png";
 import { easeInOut, motion, useScroll,useTransform, useMotionValueEvent  } from "framer-motion";
 import { useRef } from "react";
-
+import { use } from "framer-motion/m";
 
 export const Hero = () => {
-  const heroRef = useRef<HTMLElement | null>(null); 
+ const heroRef = useRef(); 
   const {scrollYProgress} = useScroll({
     target:heroRef,
     offset:["start end" , "end start"]
@@ -43,7 +43,6 @@ export const Hero = () => {
        <motion.img
        src={ CogImage.src} 
        alt=" cog image" 
-       loading="eager"
        className="md:absolute md:h-full md:w-auto  md:max-w-none md:-left-6  lg:left-0"
        animate ={{
         translateY:[-30, 30],
@@ -52,7 +51,6 @@ export const Hero = () => {
         repeat:Infinity,
         repeatType:"mirror",
         duration:3,
-        
         ease:easeInOut,
        }}
        />
@@ -61,7 +59,6 @@ export const Hero = () => {
        alt =" cyclinder image "
        width={220}
        height={220}
-       loading="eager"
        className="hidden md:block -top-8 -left-32 md:absolute "
        style={
         {
@@ -73,7 +70,6 @@ translateY:translateY
        src={noodleImage.src}
        alt="noodleimage"
        width={220}
-       loading="eager"
        className="hidden lg:block absolute top-[542px] left-[448px] rotate-[30deg]"
        style={
         {

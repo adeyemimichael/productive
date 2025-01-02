@@ -31,64 +31,52 @@ transition={
   <motion.img 
   src={acmeLogo.src}
    alt="acmelogos" 
-   loading="eager"
    className="logo-ticker-image"/>
   <motion.img
    src={quatumLogo.src} 
    alt="quatumlogos" 
-   loading="eager"
    className="logo-ticker-image" />
   <motion.img 
   src={echoLogo.src} 
   alt="echologos" 
-  loading="eager"
   className="logo-ticker-image" />
   <motion.img
    src={celestialLogo.src} 
-   alt="celestiallogos"
-   loading="eager" 
+   alt="celestiallogos" 
    className="logo-ticker-image" />
   <motion.img 
   src={Purselogo.src} 
   alt="purselogos" 
-  loading="eager"
   className="logo-ticker-image" />
   <motion.img 
   src={apexLogo.src}
-   alt="apexlogos"
-   loading="eager" 
+   alt="apexlogos" 
    className="logo-ticker-image" />
 {/* second set of logo for animation# */}
 
 <motion.img 
   src={acmeLogo.src}
    alt="acmelogos" 
-   loading="eager"
    className="logo-ticker-image"/>
   <motion.img
    src={quatumLogo.src} 
-   alt="quatumlogos"
-   loading="eager" 
+   alt="quatumlogos" 
    className="logo-ticker-image" />
   <motion.img 
   src={echoLogo.src} 
   alt="echologos" 
-  loading="eager"
   className="logo-ticker-image" />
   <motion.img
    src={celestialLogo.src} 
    alt="celestiallogos" 
-   loading="eager"
    className="logo-ticker-image" />
   <motion.img 
   src={Purselogo.src} 
   alt="purselogos" 
-  loading="eager"
   className="logo-ticker-image" />
   <motion.img 
   src={apexLogo.src}
    alt="apexlogos" 
-   loading="eager"
    className="logo-ticker-image" />
 
 </motion.div>

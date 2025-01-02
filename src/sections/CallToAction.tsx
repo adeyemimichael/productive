@@ -34,7 +34,6 @@ export const CallToAction = () => {
       src={springImage.src}
       alt="spring image "
       width={360}
-      loading="eager"
       className="absolute -right-[331px] -top-[19px] "
       style={{
         translateY,

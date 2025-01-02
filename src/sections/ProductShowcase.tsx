@@ -15,7 +15,7 @@ export const ProductShowcase = () => {
   const translateY = useTransform (
     scrollYProgress, [0, 1], [150, -150])
   return (
-    <section ref={sectionRef} className=" background-section  ">
+    <section ref={sectionRef} className=" overflow-x-clip bg-gradient-to-b from-[#fffff] to-[#02dcff] py-24  ">
       <div className="container">
         <div className=" section-heading ">
         <div className="flex justify-center">
@@ -32,14 +32,12 @@ export const ProductShowcase = () => {
    src={productImage}
    alt="productimage "
    className="mt-10 "
-   loading="eager"
    />
 
   <motion.img
   src={pyramidImage.src}
   alt="pyramid image"
   height={262}
-  loading="eager"
   width={262}
   className=" hidden md:block absolute -right-36 -top-32 "
   style={
@@ -51,7 +49,7 @@ export const ProductShowcase = () => {
 <motion.img
 src={tubeImage.src}
 alt="tube image"
- loading="eager"
+ 
 height={248}
 className=" hidden md:block absolute  bottom-24 -left-36 "
 style={{

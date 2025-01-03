@@ -9,14 +9,14 @@ import { Footer } from "@/sections/Footer";
 export default function Home () {
     return (
     <div>  
-        <Header />
+      
            <Hero/>
            <LogoTicker/>
            <ProductShowcase/>
            <Pricing/> 
             <Testimonials/>
             <CallToAction/>
-            <Footer/>
+            
     </div>
     )
 };

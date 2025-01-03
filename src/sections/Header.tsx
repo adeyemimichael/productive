@@ -26,12 +26,12 @@ export const Header = () => {
      <MenuIcon className=" h-5 w-5 cursor-pointer hover:h-6 hover:w-6 md:hidden" />
 
      <nav className="hidden md:flex gap-6 items-center text-black/60">
-     <a href="#">About</a>
+     <Link href="/about">About</Link> 
      <a href="#">Features</a>
      <a href="#">Customers</a>
      <a href="#">Updates</a>
      <a href="#">Help</a>
-     <Link href="/register"><button className="bg-black text-white font-medium  px-4 py-2 align-items justify-center rounded-lg tracking-tight hover:bg-black/20 hover:text-black ">Get it for free</button></Link>
+     <Link href="/formfield"><button className="bg-black text-white font-medium  px-4 py-2 align-items justify-center rounded-lg tracking-tight hover:bg-black/20 hover:text-black ">Get it for free</button></Link>
      </nav>
      </div>
   </div>

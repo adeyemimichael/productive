@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@mailchimp/mailchimp_marketing": "^3.0.80",
+    "aos": "^2.3.4",
     "axios": "^1.7.9",
     "clsx": "^2.1.1",
     "framer-motion": "^11.14.4",

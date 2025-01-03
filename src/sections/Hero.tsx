@@ -9,7 +9,7 @@ import { useRef } from "react";
 import { use } from "framer-motion/m";
 
 export const Hero = () => {
- const heroRef = useRef(); 
+ const heroRef = useRef<HTMLElement | null>(null); 
   const {scrollYProgress} = useScroll({
     target:heroRef,
     offset:["start end" , "end start"]

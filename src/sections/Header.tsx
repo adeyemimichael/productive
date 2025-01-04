@@ -4,7 +4,16 @@ import Logo from "@/assets/logosaas.png"
 import Image from "next/image";
 import MenuIcon from "@/assets/menu.svg"
 import Link from "next/link";
+import {  useState } from "react";
+
+
 export const Header = () => {
+  
+   const [isClick, setIsclick] = useState(false)
+const toggleNavbar = () :void  =>{
+  setIsclick(!isClick)
+}
+  
   return (
     <header className="sticky top-0 backdrop-blur-sm z-20">
   <div className="flex justify-center items-center py-3 bg-black text-white text-sm gap-3">
@@ -23,7 +32,10 @@ export const Header = () => {
   <div className="container">
     <div className="flex justify-between items-center">
      <Image src={Logo} alt="saas logo" height={40}  width={40}/>
-     <MenuIcon className=" h-5 w-5 cursor-pointer hover:h-6 hover:w-6 md:hidden" />
+     <MenuIcon className=" h-5 w-5 cursor-pointer hover:h-6 hover:w-6 md:hidden"  onClick={toggleNavbar}>
+
+  
+     </MenuIcon>
 
      <nav className="hidden md:flex gap-6 items-center text-black/60">
      <Link href="/about">About</Link> 
@@ -37,5 +49,5 @@ export const Header = () => {
   </div>
 </div>
   </header>
-)};
- 
+  );
+};

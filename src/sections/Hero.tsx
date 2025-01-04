@@ -25,7 +25,7 @@ export const Hero = () => {
   <div className="container">
      <div className="md:flex items-center">
       <div className="md:w-[478px]">
-      <div className=" tag">
+      <div className="tag">
       Version 2.0 is here 
       </div>
         

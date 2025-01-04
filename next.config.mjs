@@ -12,6 +12,7 @@ const nextConfig = {
         ...fileLoaderRule,
         test: /\.svg$/i,
         resourceQuery: /url/, // *.svg?url
+        
       },
       // Convert all other *.svg imports to React components
       {

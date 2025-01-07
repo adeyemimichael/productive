@@ -7,7 +7,7 @@ import ManageIcon from "@/assets/manage-search.svg";
 import AOS from 'aos';
 import "aos/dist/aos.css"
 const About = () => {
-  useEffect(() =>{
+  useEffect(() => {
     AOS.init({})
   } , [])
   return (

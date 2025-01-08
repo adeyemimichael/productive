@@ -5,7 +5,6 @@ import Image from "next/image";
 import MenuIcon from "@/assets/menu.svg"
 import Link from "next/link";
 import {  useState } from "react";
-import TimesIcon from "@/assets/times.svg"
 export const Header = () => {
   
    const [isClick, setIsclick] = useState(false)
@@ -33,7 +32,7 @@ const toggleNavbar = () :void  =>{
      <Image src={Logo} alt="saas logo" height={40}  width={40}/>
      <MenuIcon className=" h-5 w-5 cursor-pointer hover:h-6 hover:w-6 md:hidden"  onClick={toggleNavbar}>
      </MenuIcon>
-<TimesaIcon/>
+
      <nav className="hidden md:flex gap-6 items-center text-black/60">
      <Link href="/about">About</Link> 
      <a href="#">Features</a>

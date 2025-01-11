@@ -63,7 +63,7 @@ useEffect(() => {
      {/* menu list  */}
 
      <div
-        className={`absolute top-14 left-0 w-full bg-[#cff]
+        className={`absolute top-14 left-0 w-full custom-radial
          shadow-md p-4 flex flex-col gap-4 items-center transition-transform duration-300 ${
           nav ? 'hidden' : 'block'
         }`}

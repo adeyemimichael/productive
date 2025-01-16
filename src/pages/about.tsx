@@ -5,6 +5,8 @@ import "../app/globals.css";
 import { Header } from "@/sections/Header";
 import ManageIcon from "@/assets/manage-search.svg";
 import AOS from 'aos';
+import Avater from "@/assets/avatar-1.png"
+import Image from "next/image";
 import "aos/dist/aos.css"
 const About = () => {
   useEffect(() => {
@@ -70,7 +72,27 @@ const About = () => {
 
     <div className="">
 <div className="modal">
-  
+<div className="flex flex-wrap items-center justify-center p-6 gap-6">
+      {/* Image Section */}
+      <div className="w-full md:w-1/2">
+        <Image
+          src={Avater}
+          alt="About Us"
+          className="rounded-lg shadow-lg"
+        />
+      </div>
+      {/* Text Section */}
+      <div className="w-full md:w-1/2">
+        <h1 className="text-2xl font-bold mb-4">About Us</h1>
+        <p className="text-lg text-gray-600 leading-relaxed">
+          Welcome to our website! We are dedicated to providing exceptional
+          services and solutions tailored to meet your needs. Our team works
+          tirelessly to ensure you have the best experience possible. Feel free
+          to explore and learn more about what we offer!
+        </p>
+      </div>
+    </div>
+
 </div>
     </div>
     </div>

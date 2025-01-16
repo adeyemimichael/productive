@@ -68,9 +68,10 @@ const About = () => {
           
     </div>
 
-    <div className="h-screen ">
-
-      hi 
+    <div className="">
+<div className="modal">
+  
+</div>
     </div>
     </div>
    
